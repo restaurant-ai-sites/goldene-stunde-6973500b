@@ -1,43 +1,70 @@
 import siteData from "../data/site-data.json";
 
-export default function Hero() {
-  const { restaurant, content, images } = siteData;
+async function getImageOverrides() {
+  const SB_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const SB_KEY = process.env.SUPABASE_SECRET_KEY;
+  const PROJECT_ID = process.env.NEXT_PUBLIC_PROJECT_ID;
+  if (!SB_URL || !SB_KEY || !PROJECT_ID) return {};
+  try {
+    const res = await fetch(
+      `${SB_URL}/rest/v1/site_images?project_id=eq.${PROJECT_ID}&select=image_key,url`,
+      { headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` }, cache: "no-store" }
+    );
+    const rows = await res.json();
+    const map = {};
+    (rows || []).forEach((r) => { map[r.image_key] = r.url; });
+    return map;
+  } catch {
+    return {};
+  }
+}
+
+export default async function Hero() {
+  const { restaurant, content, images: defaultImages } = siteData;
+  const overrides = await getImageOverrides();
+  const images = { ...defaultImages, ...overrides };
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
-      {images.hero ? (
-        <>
+    <section className="border-b border-coffee/10">
+      <div className="mx-auto grid min-h-[80vh] max-w-6xl items-center gap-12 px-4 py-16 md:grid-cols-2">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-terra">
+            {restaurant.cuisine || restaurant.tagline}
+          </p>
+          <h1 className="mt-4 font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl">
+            {content.welcomeHeading || restaurant.name}
+          </h1>
+          {content.welcomeSubtext && (
+            <p className="mt-6 max-w-md text-lg leading-relaxed text-coffee/70">
+              {content.welcomeSubtext}
+            </p>
+          )}
+          <div className="mt-10 flex items-center gap-6">
+            <a
+              href="#speisekarte"
+              className="bg-coffee px-8 py-4 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-terra"
+            >
+              Zur Speisekarte
+            </a>
+            <a href="#kontakt" className="text-sm font-semibold underline underline-offset-4 hover:text-terra">
+              Kontakt
+            </a>
+          </div>
+        </div>
+
+        {images.hero ? (
           <img
             src={images.hero}
             alt={restaurant.name}
-            className="absolute inset-0 h-full w-full object-cover"
+            className="h-[60vh] w-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/70" />
-        </>
-      ) : (
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-cream to-black" />
-      )}
-
-      <div className="relative z-10 mx-auto max-w-3xl px-4 py-24 text-center">
-        <div className="mx-auto mb-8 h-px w-24 bg-terra" />
-        <p className="mb-6 text-xs uppercase tracking-[0.45em] text-terra">
-          {restaurant.cuisine || restaurant.tagline}
-        </p>
-        <h1 className="font-display text-5xl font-semibold leading-tight text-coffee sm:text-7xl">
-          {content.welcomeHeading || restaurant.name}
-        </h1>
-        {content.welcomeSubtext && (
-          <p className="mx-auto mt-6 max-w-xl font-body text-lg font-light text-coffee/80">
-            {content.welcomeSubtext}
-          </p>
+        ) : (
+          <div className="flex h-[60vh] w-full items-center justify-center bg-sand">
+            <span className="font-display text-8xl font-bold text-coffee/10">
+              {restaurant.name.charAt(0)}
+            </span>
+          </div>
         )}
-        <a
-          href="#speisekarte"
-          className="mt-12 inline-block border border-terra px-10 py-4 text-sm uppercase tracking-[0.25em] text-terra transition-colors hover:bg-terra hover:text-black"
-        >
-          Speisekarte
-        </a>
-        <div className="mx-auto mt-8 h-px w-24 bg-terra" />
       </div>
     </section>
   );
