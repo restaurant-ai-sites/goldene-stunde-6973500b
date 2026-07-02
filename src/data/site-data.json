@@ -8,12 +8,12 @@
     "address": "Kantstraße 152, 10623 Berlin",
     "openingHours": {
       "Montag": "Ruhetag",
-      "Dienstag": "17:00-01:00",
-      "Mittwoch": "17:00-01:00",
-      "Donnerstag": "17:00-01:00",
       "Freitag": "17:00-01:00",
       "Samstag": "17:00-01:00",
-      "Sonntag": "17:00-01:00"
+      "Sonntag": "17:00-01:00",
+      "Dienstag": "17:00-01:00",
+      "Mittwoch": "17:00-01:00",
+      "Donnerstag": "17:00-01:00"
     },
     "cuisine": "Bistro-Küche",
     "priceRange": "upscale"
@@ -23,12 +23,12 @@
     "description": "Entdecken Sie das Bistro Goldene Stunde in Berlin. Exquisite Steaks, erlesene Weine und eine stilvolle Atmosphäre erwarten Sie."
   },
   "content": {
-    "welcomeHeading": "Herzlich Willkommen im Goldene Stunde",
-    "welcomeSubtext": "Erleben Sie kulinarische Höhepunkte in stilvollem Ambiente.",
-    "reservationCta": "Jetzt Tisch reservieren",
-    "orderCta": "Bestellen Sie jetzt",
-    "contactHeading": "Kontaktieren Sie uns",
-    "footerText": "Besuchen Sie uns in der Kantstraße 152."
+    "welcomeHeading": "",
+    "welcomeSubtext": "",
+    "reservationCta": "Tisch reservieren",
+    "orderCta": "Jetzt bestellen",
+    "contactHeading": "Kontakt",
+    "footerText": ""
   },
   "images": {
     "interior": "/images/interior_0.webp",
