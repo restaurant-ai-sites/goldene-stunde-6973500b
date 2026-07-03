@@ -1,16 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-// basic_03 — Dunkel & Elegant: siyah zemin, açık metin, altın vurgu
-// NOT: "cream" burada KOYU zemin, "coffee" AÇIK metindir (semantik takas).
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
     extend: {
       colors: {
-        cream: "#0c0a09",
-        sand: "#1c1917",
-        coffee: "#e7e5e4",
-        terra: "#d4af37",
-        terradark: "#b8962e",
+        cream: "#faf6f0",
+        sand: "#f0e6d8",
+        coffee: "#3d2c1e",
+        terra: "#b5542d",
+        terradark: "#94431f",
       },
       fontFamily: {
         display: ["var(--font-display)", "serif"],

@@ -1,40 +1,33 @@
 {
   "restaurant": {
     "name": "Goldene Stunde",
-    "tagline": "Genießen Sie die goldene Stunde",
-    "about": "Willkommen in der Goldenen Stunde, Ihrem stilvollen Bistro im Herzen Berlins. Hier vereinen sich exquisite Steaks und erlesene Weine in einer eleganten Atmosphäre. Unser Cocktailbar lädt dazu ein, nach einem langen Tag zu entspannen und den Abend in vollen Zügen zu genießen. Besuchen Sie uns und lassen Sie sich von unserem freundlichen Team verwöhnen.",
-    "phone": "030 8877 2211",
-    "email": "info@goldene-stunde.de",
-    "address": "Kantstraße 152, 10623 Berlin",
-    "openingHours": {
-      "Montag": "Ruhetag",
-      "Freitag": "17:00-01:00",
-      "Samstag": "17:00-01:00",
-      "Sonntag": "17:00-01:00",
-      "Dienstag": "17:00-01:00",
-      "Mittwoch": "17:00-01:00",
-      "Donnerstag": "17:00-01:00"
-    },
-    "cuisine": "Bistro-Küche",
-    "priceRange": "upscale"
+    "tagline": "Genießen Sie die goldene Stunde!",
+    "about": "Willkommen im Restaurant Goldene Stunde, Ihrem Ort für kulinarische Genüsse und unvergessliche Momente. Unsere Leidenschaft für hochwertige Zutaten und kreative Rezepte spiegelt sich in jedem Gericht wider. Lassen Sie sich von unserem freundlichen Team verwöhnen und entdecken Sie eine harmonische Atmosphäre, die zum Verweilen einlädt. Ob für ein romantisches Dinner, ein Familienfest oder ein geschäftliches Treffen – wir bieten Ihnen den perfekten Rahmen. Besuchen Sie uns und erleben Sie die goldene Stunde in vollen Zügen!",
+    "phone": "",
+    "email": "",
+    "address": "",
+    "openingHours": {},
+    "cuisine": "Internationale Küche",
+    "priceRange": "mid"
   },
   "seo": {
-    "title": "Goldene Stunde - Bistro in Berlin",
-    "description": "Entdecken Sie das Bistro Goldene Stunde in Berlin. Exquisite Steaks, erlesene Weine und eine stilvolle Atmosphäre erwarten Sie."
+    "title": "Goldene Stunde – Ihr Restaurant für Genuss",
+    "description": "Entdecken Sie das Restaurant Goldene Stunde – kulinarische Höhepunkte und einladende Atmosphäre für jeden Anlass."
   },
   "content": {
-    "welcomeHeading": "",
-    "welcomeSubtext": "",
-    "reservationCta": "Tisch reservieren",
-    "orderCta": "Jetzt bestellen",
-    "contactHeading": "Kontakt",
-    "footerText": ""
+    "welcomeHeading": "Herzlich Willkommen im Goldene Stunde!",
+    "welcomeSubtext": "Genießen Sie exquisite Speisen in stilvollem Ambiente.",
+    "reservationCta": "Jetzt Tisch reservieren",
+    "orderCta": "Bestellen Sie online",
+    "contactHeading": "Kontaktieren Sie uns",
+    "footerText": "Wir freuen uns auf Ihren Besuch!"
   },
   "images": {
     "interior": "/images/interior_0.webp",
     "food": "/images/food_4.webp",
     "exterior": "/images/exterior_3.webp",
-    "hero": "/images/hero_generated.webp"
+    "hero": "/images/hero_generated.webp",
+    "about": "https://eqrjtsqkfaigpsyfpehl.supabase.co/storage/v1/object/public/site-images/6973500b-3977-4d05-aca7-eb87a4e64163/about-1783029094548.png"
   },
   "features": {
     "hasReservation": false,
@@ -43,7 +36,7 @@
   },
   "menu": [],
   "legal": {
-    "impressum": "## Impressum\n\n**Angaben gemäß § 5 TMG**\n\nGoldene Stunde\nKantstraße 152, 10623 Berlin\n030 8877 2211\ninfo@goldene-stunde.de\n\n**Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:**\nGoldene Stunde\n\n**Haftungsausschluss:**\nDie Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.\n\n**Urheberrecht:**\nDie durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.\n",
-    "datenschutz": "## Datenschutzerklärung\n\n**1. Datenschutz auf einen Blick**\n\nDiese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten auf unserer Website auf.\n\n**2. Verantwortliche Stelle**\n\nGoldene Stunde\nKantstraße 152, 10623 Berlin\nE-Mail: info@goldene-stunde.de\n\n**3. Erhebung und Speicherung personenbezogener Daten**\n\nBeim Besuch unserer Website werden automatisch Informationen allgemeiner Natur erfasst (Server-Log-Dateien). Diese Daten erlauben keine Rückschlüsse auf Ihre Person.\n\n**4. Kontaktformular**\n\nWenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen gespeichert.\n\n**5. Cookies**\n\nUnsere Website verwendet Cookies. Durch die Nutzung unserer Website erklären Sie sich damit einverstanden.\n\n**6. Ihre Rechte**\n\nSie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer gespeicherten personenbezogenen Daten.\n\n**7. Kontakt Datenschutzbeauftragter**\n\nBei Fragen zum Datenschutz wenden Sie sich an: info@goldene-stunde.de\n"
+    "impressum": "## Impressum\n\n**Angaben gemäß § 5 TMG**\n\nGoldene Stunde\n\n\ninfo@restaurant.de\n\n**Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:**\nGoldene Stunde\n\n**Haftungsausschluss:**\nDie Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.\n\n**Urheberrecht:**\nDie durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.\n",
+    "datenschutz": "## Datenschutzerklärung\n\n**1. Datenschutz auf einen Blick**\n\nDiese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten auf unserer Website auf.\n\n**2. Verantwortliche Stelle**\n\nGoldene Stunde\n\nE-Mail: info@restaurant.de\n\n**3. Erhebung und Speicherung personenbezogener Daten**\n\nBeim Besuch unserer Website werden automatisch Informationen allgemeiner Natur erfasst (Server-Log-Dateien). Diese Daten erlauben keine Rückschlüsse auf Ihre Person.\n\n**4. Kontaktformular**\n\nWenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen gespeichert.\n\n**5. Cookies**\n\nUnsere Website verwendet Cookies. Durch die Nutzung unserer Website erklären Sie sich damit einverstanden.\n\n**6. Ihre Rechte**\n\nSie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer gespeicherten personenbezogenen Daten.\n\n**7. Kontakt Datenschutzbeauftragter**\n\nBei Fragen zum Datenschutz wenden Sie sich an: info@restaurant.de\n"
   }
 }
